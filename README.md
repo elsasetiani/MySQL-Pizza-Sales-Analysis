@@ -8,7 +8,7 @@ Proyek ini menampilkan analisis data penjualan menggunakan SQL untuk mengidentif
 - Analyze revenue and sales trends.
 - Identify top-performing and underperforming pizzas.
 - Extract key performance indicators (KPIs).
-- Support data-driven business recommendations.
+- Support data-driven business recommendations. 
 
 ---
 
