@@ -5,18 +5,18 @@ Proyek ini menampilkan analisis data penjualan menggunakan SQL untuk mengidentif
 
 ## Objectives
 
-- Analyze revenue and sales trends.
-- Identify top-performing and underperforming pizzas.
-- Extract key performance indicators (KPIs).
-- Support data-driven business recommendations. 
+- Menganalisis tren pendapatan dan penjualan.
+- Mengidentifikasi pizza dengan kinerja terbaik dan yang berkinerja buruk.
+- Mengekstrak indikator kinerja utama (KPI).
+- Mendukung rekomendasi bisnis berdasarkan data.
 
 ---
 
 ## Dataset Description
 
-- Rows: 48,620
-- Period: Full year 2015
-- Fields: `pizza_id`, `order_id`, `pizza_name_id`, `quantity`, `order_date`, `order_time`, `unit_price`, `total_price`, `pizza_category`, `pizza_size`, `pizza_ingredients`, `pizza_name`
+- Baris: 48,620
+- Periode: Sepanjang tahun 2015
+- Bidang: `pizza_id`, `order_id`, `pizza_name_id`, `quantity`, `order_date`, `order_time`, `unit_price`, `total_price`, `pizza_category`, `pizza_size`, `pizza_ingredients`, `pizza_name`
 
 ---
 
@@ -31,12 +31,25 @@ Proyek ini menampilkan analisis data penjualan menggunakan SQL untuk mengidentif
 
 ### 1. Total Revenue
 
+### Input
 ```sql
 SELECT SUM(total_price) AS Total_Revenue
 FROM project_pizzasales;
 ```
+### Output 
+| Total_Revenue | 
+|---------------|        
+| 1087861.11    | 
+
 
 ### 2. Average Order Value
+
+### Input
 ```sql 
 SELECT (SUM(total_price) / COUNT(DISTINC order_id)) AS Avg_Order_Value
 FROM project_pizzasales;
+```
+### Output 
+| Avg_Order_Value | 
+|---------------|        
+| 38.307262    |
