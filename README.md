@@ -354,6 +354,7 @@ Nama seperti "The Brie Carre Pizza" dan "Green Garden Pizza" mungkin kurang meng
 ---
 
 ## I. Top 5 Pizzas by Quantity Sold
+### Input
 ```sql 
 SELECT pizza_name, SUM(quantity) AS Total_Quantit
 FROM project_pizzasales
@@ -389,6 +390,7 @@ Misalnya: The Spicy Classic Deluxe atau The Creamy Hawaiian untuk memperkaya pen
 ---
 
 ## J. Bottom 5 Pizzas by Quantity Sold
+### Input
 ```sql 
 SELECT pizza_name, SUM(quantity) AS Total_Quantity
 FROM project_pizzasales
@@ -422,6 +424,7 @@ LIMIT 5;
 ---
 
 ## K. Top 5 Pizzas by Total Orders
+### Input
 ```sql 
 SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
 FROM project_pizzasales
@@ -456,6 +459,7 @@ Contoh: “Top 5 Favorite Box” atau “Most Loved Combo”.
 ---
 
 ## K. Bottom 5 Pizzas by Total Orders
+### Input
 ```sql 
 SELECT pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
 FROM project_pizzasales
@@ -486,21 +490,3 @@ Label “Hidden Gem”,
 Diskon terbatas,
 Paket uji coba (“Try Something New” combo).
 #### 5. Jika performa tetap rendah setelah optimasi, gunakan data ini sebagai dasar untuk menyederhanakan menu dan memfokuskan produksi hanya pada varian dengan performa terbaik.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
